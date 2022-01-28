@@ -1,6 +1,6 @@
 	for (int x=0; a-1<=x; x++) {
     	if([a]>[x]) {
-    		score=0;
+    		score=score+0;
     	}
     	
     	else {
