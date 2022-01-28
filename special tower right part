@@ -1,0 +1,17 @@
+ for (int x= a+1; x<=m;x++) {
+    	if([a]<[x]) {
+    		score=score+0;
+    	}
+    	
+    	else {
+    		score=score+1:
+    		}
+    	}
+    	
+    	if(score==0) {
+    		printf("lt's special tower");
+    	}
+    	
+    	else {
+    		printf("Fale");
+    	}
