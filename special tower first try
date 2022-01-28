@@ -1,0 +1,73 @@
+#include <stdio.h>
+int main () {
+	int total=0;//스페셜 타워의 갯수 
+	int a; // [a]
+    int m; 
+	int score=0; // score에 따라 마지막에 왼쪽이 조건에 적합한 지가 정해진다. 
+	int tower[10000];
+	printf("타워의 갯수를 적어 주세요(10~1000000)");
+    scanf("%d", &m);
+    
+    for(int i=0; i<m; i++)
+    {
+    	scanf("%d", &tower[i]);	
+    } // 타워의 갯수를 정하고 타워의 길이를 정한다. 
+     
+	
+	//공백 
+	a=2;
+	
+	for (int x=0; a-1<=x; x++) {
+    	if(tower[a]>tower[x]) {
+    		score=score+0;
+    	}
+    	
+    	else {
+    		score = score+1;
+    	}
+    }
+    
+    if(score==0)
+    {
+    	printf("Pass");
+    }
+    
+    else {
+    	printf("Fail");
+    }
+    
+  //  printf("write on 'a' again");
+    
+  //  scanf("%d", &a);
+    
+    //공백
+	 
+    
+    for (int x= a+1; x<=m;x++) {
+    	if(tower[a]<tower[x]) {  //6, t[x] is 8, 7
+    	
+			score=score+0;		// score is 0, 0
+    	}
+    	
+    	else {
+    		score=score+1;
+    		}
+    	}
+    	
+    	if(score==0) {
+    		printf("lt's special tower");
+    		
+    		total=total+1;
+    	}
+    	
+    	else {
+    		printf("Fail");
+    	}
+    	printf("%d", score);
+    	//공백
+		
+	//	printf("%d", total);
+		
+		return 0;
+		
+}
