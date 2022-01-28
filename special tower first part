@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main () {
+	int a; // [a]
+    int m; 
+	int score; // score에 따라 마지막에 왼쪽이 조건에 적합한 지가 정해진다. 
+	int tower[1000001];
+	printf("타워의 갯수를 적어 주세요(10~1000000)");
+    scanf("%d" &m);
+    
+    for(int i=0; i<m; i++)
+    {
+    	scanf("%d", &tower[i]);	
+    } // 타워의 갯수를 정하고 타워의 길이를 정한다. 
