@@ -1,0 +1,65 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <windows.h>
+int main() {
+	int a;
+	int x=0;
+	int c=0;
+	int s=0;
+	int score=1;
+	int t;
+	
+	for(   ;score=1;   ){
+    
+    
+	while(x<5)
+	{
+		srand(time(NULL));
+		a=rand()%4+1;
+		
+		printf("%d", a);
+		
+	    c=c*10+a;
+		
+	    Sleep(500);
+		system("cls");
+		Sleep(500);
+		x=x+1;
+		
+	}
+	
+	
+	printf("\n나왔던 숫자를 입력하세요:");
+	
+	scanf("%d", &s);
+	
+	if(c==s) {
+		printf("정답입니다\n");
+	    break;
+	}
+	
+	else {
+		printf("틀렸습니다\n");
+	   
+	    printf("다시하기:1 끝내기:2\n"); 
+	    
+}
+	scanf("%d", &t);
+
+	if(t==1){
+		score=1;
+	}
+	
+	else {
+		score=0;
+	}
+}
+
+
+	
+	if(score==0) {
+		printf("게임이 끝났습니다");
+	}
+	
+	return 0; }
