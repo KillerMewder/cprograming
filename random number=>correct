@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <windows.h>
+int main() {
+	int a;
+	int x=0;
+	while(x<5)
+	{
+		srand(time(NULL));
+		a=rand()%4+1;
+		
+		printf("%d", a);
+		
+		Sleep(500);
+		system("cls");
+		
+		x=x+1;
+		
+	}
+	
+	return 0;
+}
