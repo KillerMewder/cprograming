@@ -1,0 +1,76 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <windows.h>
+int main() {
+	int a;
+	int x=0;
+	int c=0;
+	int s=0;
+	int score=1;
+	int t;
+	int d=5;
+
+    printf("*안내* 숫자는 0.5간격으로 나옵니다. 정답을 맞췄지만 끝내고 싶으면 틀리고 2를 쓰면 됩니다.");  
+    Sleep(5000);
+    system("cls");
+    Sleep(500);
+	for(   ;score=1;   ){
+    
+    
+	for(   ;x<d;x++) 
+	{
+	    system("cls");
+		srand(time(NULL));
+		a=rand()%4+1;
+		
+		printf("%d", a);
+		
+	    c=c*10+a;
+		
+	    Sleep(500);
+		system("cls");
+		Sleep(500);
+		
+		
+	}
+	x=0;
+	printf("%d", c);
+	printf("\n나왔던 숫자를 입력하세요:");
+	
+	scanf("%d", &s);
+	
+	if(c==s) {
+		printf("정답입니다\n");
+	    d=d+1;
+        Sleep(500);
+ }
+	
+	else {
+		printf("틀렸습니다\n");
+	   
+	    printf("다시하기:1 끝내기:2\n"); 
+	    scanf("%d", &t);
+}
+	
+
+	if(t==1){
+		score=1;
+		Sleep(500);
+	}
+	
+	else {
+		score=0;
+		Sleep(500);
+	}
+	a=0;
+	c=0;
+}
+
+
+	
+	if(score==0) {
+		printf("게임이 끝났습니다");
+	}
+	
+	return 0; }
