@@ -1,0 +1,10 @@
+#include <stdlib.h>
+#include <time.h>
+
+
+
+srand(time(NULL));//shake the book
+int a = rand();//0~32767 between 0 and 32767 number is become store in a
+
+if i want to store between 1~10 numbers in a
+rand()%+1;
