@@ -1,0 +1,56 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int main () {
+	int a;
+	int b;
+	srand(time(NULL));
+	a = rand()%3+1;
+	printf("가위:1, 바위:2, 보:3\n");
+	scanf("%d", &b);
+	if(a==1) {
+	    if(a==b) {
+		    printf("비겼습니다");
+		}
+		else if(a+1==b) {
+			printf("승");
+		}
+		else if(a-1==b) {
+		    printf("패배");
+		}
+	    else if(a+2==b) {
+		    printf("패배");
+		}
+	    else {
+		    printf("이김");
+		}
+	}
+	
+	else if(a==2) {
+	    if(a==b) {
+		    printf("비겼습니다");
+		}
+		
+		else if(a>b) {
+			printf("패배");
+		}
+		
+		else {
+			printf("승");
+		}
+		
+	}
+	
+	else {
+		if(a==b) {
+			printf("비겼습니다");
+        }
+        else if(a-1==b) {
+        	printf("패배");
+		}
+		else {
+			printf("승");
+		}
+	}
+	
+	return 0; }
