@@ -1,0 +1,112 @@
+#include <stdio.h>
+int main () {
+	int a, b;
+	printf("01월달 몸무게 :  \n");
+	scanf("%d", &a);
+	printf("\n02월달 몸무게 :  ");
+	scanf("%d", &b);
+	int x=b-a;
+	a=b;
+	printf("\n03월달 몸무게 :  ");
+	scanf("%d", &b);
+	if(x>b-a) {
+		a=b;
+	}
+	else if(x<b-a) {
+		x=b-a;
+		a=b;
+	}
+	printf("\n04월달 몸무게 :  ");	
+	scanf("%d", &b);
+
+	
+	if(x>b-a) {
+		a=b;
+	}
+	else if(x<b-a) {
+		x=b-a;
+		a=b;
+	}
+	printf("\n05월달 몸무게 :  ");
+	scanf("%d", &b);
+	
+		if(x>b-a) {
+		a=b;
+	}
+	else if(x<b-a) {
+		x=b-a;
+		a=b;
+	}
+	printf("\n06월달 몸무게 :  ");
+	scanf("%d", &b);
+	
+	if(x>b-a) {
+		a=b;
+	}
+	else if(x<b-a) {
+		x=b-a;
+		a=b;
+	}
+	printf("\n07월달 몸무게 :  ");
+	scanf("%d", &b);
+	
+		if(x>b-a) {
+		a=b;}
+	else if(x<b-a) {
+		x=b-a;
+		a=b;
+	}
+	printf("\n08월달 몸무게 :  ");
+	scanf("%d", &b);
+
+			if(x>b-a) {
+		a=b;
+	}
+	else if(x<b-a) {
+		x=b-a;
+		a=b;
+	}
+	printf("\n09월달 몸무게 :  ");
+	scanf("%d", &b);
+		if(x>b-a) {
+	
+		a=b;
+	}
+	else if(x<b-a) {
+		x=b-a;
+		a=b;
+	}
+	printf("\n10월달 몸무게 :  ");
+	scanf("%d", &b);
+	
+			if(x>b-a) {
+		a=b;
+	}
+	else if(x<b-a) {
+		x=b-a;
+		a=b;
+	}
+	printf("\n11월달 몸무게 :  ");
+	scanf("%d", &b);
+
+			if(x>b-a) {
+		a=b;
+	}
+	else if(x<b-a) {
+		x=b-a;
+		a=b;
+	}
+	printf("\n12월달 몸무게 :  "); 
+scanf("%d", &b);
+
+		if(x>b-a) {
+		a=b;
+	}
+	else if(x<b-a) {
+		x=b-a;
+		a=b;
+	}
+	printf("가장많이 증가한달:%d" ,x);
+
+	return 0; }
+	
